@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .header{
+            background-color: blue;
+            color: white;
+            padding: 30px;
+            text-align: center;
+
+
+
+        }
+        nav a{
+            color:white;
+            display:inline-block;
+            text-decoration: none;
+            padding: 20px;
+
+        } 
+        nav a:hover{
+            background-color: lightblue;
+        }
+        #profile{
+        display: flex;
+        color:black;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-left: 300px;
+        background-color: white;
+        margin-top: 60px;
+    }
+    #about{
+        background-color: white;
+        color: black;
+        width: 50%;
+        margin-left: 300px;
+        margin-top: 40px;
+        
+        
+
+    }
+    #about img{
+        width: 90px;
+        height: 90px;
+        border-radius: 150px;
+        margin-top: 10px;
+        margin-right: 10%;
+        
+        
+    }
+    #about p{
+        position: absolute;
+        top:70%;
+        margin-left: 100px;
+    }
+    #skills{
+        
+        background-color: white;
+        width:50%;
+        margin-left: 300px;
+        height: 350px;
+
+    }
+    table{
+        margin: 25px 2px 25px 25px;
+        border-color:white ;
+    }
+    #Work{
+        background-color: white;
+        width: 50%;
+        margin-left:300PX ;
+    }
+    .box1{
+        background-color: lightgrey;
+        width: 40%;
+        margin-left: 30px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .box2{
+        background-color: lightgrey;
+        width: 20%;
+        margin-left: 30px;
+        border-radius: 20px;
+        text-align: center;
+        margin-left: 55%;
+        position: absolute;
+        top:135%;
+        right: 30%;
+
+    }
+    .box3{
+        background-color: lightgrey;
+        width: 40%;
+        margin-left: 30px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    #contact{
+        background-color: white;
+        width: 51%;
+        margin-left: 22%;
+        height: 150%;
+    }
+    input[type="text"]{
+        height:50px;
+        width: 70%;
+        border: 0px solid white;
+        
+    
+    }
+    label[for="name"]{
+        font-weight: bolder;
+        
+    }
+    input[type="email"]{
+        height:50px;
+        width: 70%;
+        border: 0px solid white;
+        
+    }
+
+    label[for="email"]{
+        font-weight: bolder;
+    }
+    input[type="subject"]{
+        height: 50px;
+        width: 70%;
+        border: 0px solid white;
+
+        
+    }
+    label[for="subject"]{
+        font-weight: bolder;
+    }
+   label[for="message"]{
+        font-weight: bolder;
+    
+    }
+    textarea[id="message"]{
+        height: 50px;
+        width: 70%;
+        border: 0px solid white;
+    }
+    button{
+        background-color: green;
+        width: 20%;
+        color: white;
+        margin-left: 30%;
+        border-radius: 10px;
+        border: 0px solid green;
+        margin-left: 0px;
+    }
+    .footer{
+        background-color: blue;
+        color: white;
+        height: 40px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    </style>
+</head>
+
+    
+
+<body>
+    <div class="header">
+        <nav>
+        <a href="#profile">profile</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#Work">Work</a>
+        <a href="#contact">contact</a>
+        </nav>
+    </div>
+    <div id="profile">
+        <h2>Welcome to My Portfolio</h2>
+    </div>
+    <div id ="about">
+        <h3>About Me</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQf2tHR30YW6bis67C8rbnUGhr2v_vf41qYw&s">
+        <p>Hello!I'm a web developer with a position for creating beautful and functional websites</p>
+    </div>
+    <div id="skills">
+        <h2>skills</h2>
+        
+        <table border="1" cellspacing="0" cellpadding="20px" width="70%" style="margin-left: 100px;">
+            <thead>
+                <tr bgcolor="lightblue">
+                    <th>Skill</th>
+                    <th>Proficiency</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Html</td>
+                    <td>expert</td>
+                    </tr>
+                    <tr>
+                    <td>CSS</td>
+                    <td>Advanced</td>
+                    </tr>
+                    <tr>
+                    <td>Javascript</td>
+                    <td>Intermediate</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="Work">
+        <h2>My Work</h2>
+        <div class="box1">
+            <img src=./baahubali.png/> project 1
+            <h3>project one</h3>
+            <p>description of project one</p>
+        </div>
+        <div class="box2">
+        <img src="./baahubali.png"/>project 2
+            <h3>project Two</h3>
+            <p>description of project two</p>
+        </div>
+        <div class="box3">
+            <img src="./baahubali.png"/>project 3
+            <h3>project Three</h3>
+            <p>description of project three</p>
+
+        </div>
+    </div>
+    <div id="contact">
+        <h2>contact Me</h2>
+        <pre>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <label for="email">email:</label>
+        <input type="email" id="email">
+        <label for="subject" >subject:</label>
+        <input type="subject" id="subject">
+        
+        <label for="message">Message</label>
+        <textarea name="Message" id="message">
+        </textarea>
+        <button type="submit">send message</button>
+        </pre>
+    </div>
+    <div class="footer">
+        <p>@2024 My portfolio</p>
+    </div>
+    
+</body>
+</html>
